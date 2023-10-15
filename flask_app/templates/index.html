@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Avinash- HomePage</title>
+        <title>Avinash Nandyala</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            #userPhoto {
+                width: 120px; /* Adjust this value as needed */
+                height: 120px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .header-section {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,8 +44,19 @@
                     </li>
                 </ul>
             </div>
+            
         </nav>
-        
+        <!-- <div class="container"> -->
+            <div class="header-section">
+                <img src="{{ url_for('static', filename='images/your_photo.jpg') }}" alt="Your Name" id="userPhoto">
+                
+                <div>
+                    <h1>Avinash Nandyala</h1>
+                    <p>Software Engineer</p>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        <!-- </div> -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
